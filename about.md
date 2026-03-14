@@ -12,4 +12,4 @@ A place to include any other types of information about AIMA .
 
 ### Code base
 
-[github repo](github.com/kaustabhganguly/aima-website-6)
+[github repo](https://github.com/stabgan/aima-website-6)

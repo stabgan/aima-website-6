@@ -1,16 +1,63 @@
-# AIMA WEBSITE 6
+# AIMA Exercises Website (v6) — Jekyll Edition
 
-This is the 6th website I built to showcase my skills . In this website I used Jekyll for content management .
+A Jekyll-powered static site for browsing exercises from *Artificial Intelligence: A Modern Approach*. Features MathJax-rendered equations, Disqus commenting, and GitHub Pages deployment.
 
+## What It Does
 
-I explored jekyll it's liquid templating language and found that it can cause conflict with angular.js builds as both use {{}} syntaxes
+- Renders AIMA textbook exercises (Chapters 7 and 14) with full LaTeX math support
+- Provides a blog-style layout with individual posts per exercise set
+- Supports community discussion through Disqus comments
+- Auto-generates sitemap and RSS feed via Jekyll plugins
 
-Jekyll is a nice static cms . 
+## 🛠 Tech Stack
 
-## In this website :
+| Tool | Purpose |
+|------|---------|
+| 💎 [Jekyll](https://jekyllrb.com/) | Static site generator |
+| 📐 [MathJax](https://www.mathjax.org/) | LaTeX math rendering |
+| 💬 [Disqus](https://disqus.com/) | Comment system |
+| 🚀 GitHub Pages | Hosting |
+| 🎨 SCSS | Styling with Sass partials |
 
-- I Uploaded two exercises to show that it supports Mathjax and the workflow style .
-- Just making a post in the ```_post``` directory in markdown will cause the server to render the components automatically       using Jekyll's Markdownify 
-- Minimalistic style of the theme .
-- It can take up to 10 minutes for github to render the webpages .
-- Integrated with disqus comment section .
+## Getting Started
+
+### Prerequisites
+
+- [Ruby](https://www.ruby-lang.org/) 2.5+
+- [Jekyll](https://jekyllrb.com/docs/installation/) 3.x
+
+### Local Development
+
+```bash
+git clone https://github.com/stabgan/aima-website-6.git
+cd aima-website-6
+gem install jekyll bundler
+jekyll serve
+```
+
+Visit `http://localhost:4000/aima-website-6/`.
+
+### Adding Exercises
+
+1. Create a new `.md` file in `_posts/` with the naming convention `YYYY-M-D-Title.md`
+2. Include front matter: `layout: post`, `title`, and `comments: true`
+3. Write exercises using Markdown with LaTeX math (`$...$` for inline)
+
+## Project Structure
+
+```
+├── _config.yml          # Jekyll site configuration
+├── _includes/           # Reusable HTML partials (meta, disqus, icons)
+├── _layouts/            # Page templates (default, page, post)
+├── _posts/              # Exercise markdown files
+├── _sass/               # SCSS partials
+├── about.md             # About page
+├── index.html           # Home page listing all posts
+└── style.scss           # Main stylesheet
+```
+
+## ⚠️ Known Issues
+
+- The Disqus shortname references the old GitHub username; comments from the original deployment may not carry over.
+- Exercise cross-references (e.g., `Figure [name](#/)`) use placeholder anchors and do not resolve to actual figures.
+- Some SVG images are hosted externally on `nalinc.github.io` and may become unavailable.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bayes net Exercise
+title: Knowledge and Logic Exercise
 comments: true
 ---
 

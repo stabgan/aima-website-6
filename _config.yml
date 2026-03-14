@@ -20,7 +20,7 @@ description: Exercises
 # Includes an icon in the footer for each username you enter
 footer-links:
 
-  github: kaustabhganguly/aima-website-6
+  github: stabgan/aima-website-6
 
 
 
@@ -33,7 +33,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: kaustabhganguly.github.io/aima-website-6
+url: stabgan.github.io/aima-website-6
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -65,7 +65,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
